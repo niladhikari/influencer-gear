@@ -140,14 +140,15 @@ ul a {
   line-height: 70px;
 }
 .card-container {
+  margin-top: 30px;
   display: grid;
   gap: 30px;
-
   grid-template-columns: repeat(3, 1fr);
 }
 .cards {
   border-radius: 5px;
   max-width: 329px;
+  margin: auto;
   background: #fff;
   padding: 17px 14px;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -226,13 +227,23 @@ ul a {
   .sponspors-card img {
     width: 34px;
   }
+
+  /* collection responsive */
+  .Collection {
+    padding:20px;
+  }
+  .card-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* tablet or medium devies */
 .hide {
   display: none;
 }
-@media screen and (min-width: 576px) and (max-width: 850px) {
+@media screen and (min-width: 576px) and (max-width: 912px) {
   header {
     padding: 0px;
   }
@@ -272,5 +283,14 @@ ul a {
   }
   .sponspors-card img {
     width: 60px;
+  }
+   /* collection responsive */
+   .Collection {
+    padding:30px;
+  }
+  .card-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
