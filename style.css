@@ -30,6 +30,9 @@
   padding-right: 24px;
   width: 24px;
 }
+section{
+    margin-bottom: 100px;
+}
 
 /* header section style */
 header {
@@ -120,9 +123,6 @@ ul a {
   border-image-slice: 1;
   width: 100%;
 }
-.sponspors-card img {
-  /* width: 100%; */
-}
 
 /* responsive section */
 @media screen and (max-width: 576px) {
@@ -199,5 +199,21 @@ ul a {
   }
   .banner-discription {
     padding: 25px 0px;
+  }
+
+  .sponspors {
+    margin: 50px 60px;
+    padding: 0px;
+  }
+  .sponspors-card-container {
+    display: grid;
+    /* margin: auto;
+    width: 360px; */
+    padding: 20px;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sponspors-card img {
+    width: 60px;
   }
 }
