@@ -12,6 +12,9 @@
   font-family: "Space Mono", monospace;
   font-family: "Work Sans", sans-serif;
 }
+body{
+    max-width: 1440px;
+}
 .primary-btn {
   color: #fff;
   font-size: 16px;
@@ -36,7 +39,9 @@ section {
 
 /* header section style */
 header {
-  padding: 50px 120px;
+  max-width: 1200px;
+  padding: 70px 0px;
+  margin: auto;
   background: #fff;
 }
 /* navigation section style */
@@ -76,17 +81,19 @@ ul a {
   gap: 133px;
   align-items: center;
 }
-.banner-contant {
+/* .banner-contant {
   width: 582px;
-}
+} */
 .banner-tital {
   color: #3a3a3a;
+  max-width: 582px;
   font-size: 52px;
   font-weight: 700;
   line-height: 70px;
 }
 .banner-discription {
   padding: 16px 0px;
+  max-width: 505px;
 }
 .banner-image {
   background-image: url("images/Circle\ design.svg");
@@ -218,7 +225,6 @@ main {
 @media screen and (max-width: 576px) {
   header {
     margin-top: 40px;
-    padding: 0px;
   }
   /* navigation responsive */
   .nav-tital {
@@ -235,14 +241,14 @@ main {
 
   /* banner responsive */
   .banner {
-    margin-top: 50px;
+    padding-top: 100px;
     text-align: center;
     flex-direction: column-reverse;
     gap: 60px;
   }
-  .banner-contant {
+  /* .banner-contant {
     width: 404px;
-  }
+  } */
 
   /*sponspors responsive  */
   .sponspors {
