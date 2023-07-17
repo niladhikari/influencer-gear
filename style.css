@@ -31,7 +31,7 @@
   width: 24px;
 }
 section {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 /* header section style */
@@ -96,11 +96,15 @@ ul a {
 }
 
 /* main section style */
+main {
+  max-width: 1440px;
+  background-color: #fff;
+}
 
 /* sponspors section style */
 .sponspors {
-  margin-top: 50px;
-  padding: 0px 165px;
+    max-width: 1120px;
+    margin: auto;
 }
 .sponspors-card-container {
   display: flex;
@@ -176,15 +180,44 @@ ul a {
   font-weight: 400;
   line-height: 36px;
 }
-.rating{
-   padding: 6px 0px;
+.rating {
+  padding: 6px 0px;
 }
 
+/* featured section style */
+.featured{
+    max-width: 1120px;
+    margin: auto;
+}
+.featured-container{
+    display: flex;
+    gap: 96px;
+    align-items: center;
+}
 
+.featured-tital{
+    color: #0a0826;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.featured-discription {
+    color: #6C6C6C;
+    font-size: 16px;
+    padding: 16px 0px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    max-width: 500px;
+}
+.featured-img img{
+    width: 100%;
+}
 
 /* responsive section */
 @media screen and (max-width: 576px) {
   header {
+    margin-top: 40px;
     padding: 0px;
   }
   /* navigation responsive */
@@ -230,13 +263,22 @@ ul a {
 
   /* collection responsive */
   .Collection {
-    padding:20px;
+    padding: 20px;
   }
   .card-container {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* featured responsive */
+  .featured-container{
+      padding: 30px;
+      text-align: center;
+     flex-direction: column-reverse;
+     gap: 96px;
+     align-items: center;
+}
 }
 
 /* tablet or medium devies */
@@ -245,6 +287,7 @@ ul a {
 }
 @media screen and (min-width: 576px) and (max-width: 912px) {
   header {
+    margin-top: 40px;
     padding: 0px;
   }
   /* navigation responsive */
@@ -284,13 +327,26 @@ ul a {
   .sponspors-card img {
     width: 60px;
   }
-   /* collection responsive */
-   .Collection {
-    padding:30px;
+  /* collection responsive */
+  .Collection {
+    padding: 30px;
   }
   .card-container {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(2, 1fr);
   }
+   /* featured responsive */
+   .featured-container{
+    padding: 0px;
+    text-align: center;
+   flex-direction: column-reverse;
+   gap: 96px;
+   align-items: center;
+}
+.featured-discription {
+  
+    padding: 24px 0px;
+    
+}
 }
