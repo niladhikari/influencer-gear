@@ -229,6 +229,7 @@ main {
 .footer {
   color: #fff;
   background-color: #0a0826;
+  margin-top: 100px;
 }
 .footer-container {
   text-align: center;
