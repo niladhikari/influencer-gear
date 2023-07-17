@@ -34,7 +34,7 @@ body{
   width: 24px;
 }
 section {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 /* header section style */
@@ -112,6 +112,8 @@ main {
 .sponspors {
     max-width: 1120px;
     margin: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 .sponspors-card-container {
   display: flex;
@@ -189,10 +191,13 @@ main {
 }
 .rating {
   padding: 6px 0px;
+  display: flex;
+  gap: 10px;
 }
 
 /* featured section style */
 .featured{
+
     max-width: 1120px;
     margin: auto;
 }
